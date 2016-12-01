@@ -5,11 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-
-
-
-
-
 higgsboson = pd.read_csv('data/training.csv')
 higgsboson.set_index('EventId', inplace=True)
 # higgsboson.plot()
@@ -26,7 +21,3 @@ classifier.fit(X_train, y_train)
 print 'end of training before ' + str(time.time() - now) + ' seconds'
 print 'Classification score: ' + str(classifier.score(X_test, y_test))
 print ''
-
-
-
-
